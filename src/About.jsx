@@ -3,7 +3,8 @@ import './App.css'
 export default function About() {
   return (
     <>
-      <div className="main-about">
+<div className='about-whole'>
+<div className="main-about">
       <h1>About us</h1>
       <div className='para'>
         <p>
@@ -23,6 +24,7 @@ export default function About() {
         alert("will be available soon...")
       }}>know more </button>
       </div>
+</div>
     </>
   );
 }
