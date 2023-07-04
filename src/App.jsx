@@ -1,5 +1,5 @@
 import Nav from './Nav'
-import Home from './Home'
+
 import About from './About'
 import Contact from './Contact'
 import Loader from './loader'
@@ -14,6 +14,7 @@ import SmoothScrollbar from 'smooth-scrollbar'
 
 
 const Games = lazy(()=> import('./Games'));
+const Home = lazy(()=> import('./Home'));
 function App() {
  
 
