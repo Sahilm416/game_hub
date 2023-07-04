@@ -2,7 +2,7 @@ import Nav from './Nav'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
-import Details from './Details'
+import Loader from './loader'
 import './App.css'
 import {BrowserRouter, NavLink,Route,Routes } from 'react-router-dom'
 import { Suspense,lazy, useEffect, useReducer, useState } from 'react'
@@ -35,13 +35,13 @@ document.addEventListener('scroll',()=>{
      }} className='progress-bar'></div>
      
 
-    <Suspense fallback={<h1>loading games...</h1>}>
+    <Suspense fallback={<Loader/>}>
     <Routes>
        <Route path="/" element={<Home/>} />
        <Route path="/About" element={<About/>} />
        <Route path="/Contact" element={<Contact/>} />
        <Route path="/Games" element={<Games/>} />
-       <Route path="/Details" element={<Details/>} />
+       
     </Routes>
     </Suspense>
     
