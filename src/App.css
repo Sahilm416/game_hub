@@ -1,7 +1,11 @@
 body {
    box-sizing: border-box;
 }
+* {
+    background-color: black;
+}
 .main-about {
+    background-color: black;
     padding: 20px;
     color: #ddd;
     text-align: center;
@@ -22,7 +26,7 @@ body {
 }
 
 .whole-contact {
-   
+    
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -56,12 +60,13 @@ body {
 }
 
 div > a  {
-    color: white;
+    color: rgb(72, 55, 251);
 }
 
 div > a:hover {
     color:red;
 }
+
 
 @media (500px >= width) {
       .main-contact{
