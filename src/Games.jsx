@@ -115,7 +115,7 @@ let count = 0;
    const setDetails = (ss,gg,tt,nn)=>{
     dispatch1({Type:"load",Payload:ss,genre:gg,tags:tt,name:nn});
     setY(window.scrollY);
-   
+    
   
     setBack(ss[0].image);
     setShow(false)
