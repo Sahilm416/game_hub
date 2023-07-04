@@ -1,0 +1,83 @@
+body {
+   box-sizing: border-box;
+}
+.main-about {
+    padding: 20px;
+    color: #ddd;
+    text-align: center;
+    max-width: 900px;
+}
+
+.main-about > h1 {
+    color: white;
+}
+.main-about >button {
+    background-color: red;
+    color: white;
+}
+.main-about >button:hover {
+    background-color: white;
+    color: red;
+    
+}
+
+.whole-contact {
+   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contact {
+
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #444;
+    padding: 40px;
+    border-radius: 10px;
+}
+.main-contact:hover {
+    box-shadow: 0px 0px 8px white;
+}
+.main-contact > div >* >img {
+    width: 80px;
+}
+
+.main-contact> div >* >img:hover {
+    filter: saturate(1.6);
+
+}
+
+div > a  {
+    color: white;
+}
+
+div > a:hover {
+    color:red;
+}
+
+@media (500px >= width) {
+      .main-contact{
+        flex-direction: column;
+        gap: 30px;
+      }
+}
+
+
+
+.progress-bar {
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100px;
+    height: 2px;
+    background-color: rgba(244, 17, 5);
+    z-index: 3;
+}

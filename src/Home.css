@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Prompt:wght@700&display=swap');
+body {
+  padding: none;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+ 
+}
+.container {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(0,0,0,0.6);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   
+}
+.container > h1 {
+  text-align: center;
+  color: white;
+  font-family: poppins;
+  font-weight: 1000;
+  margin: 20px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.clip {
+  object-fit: cover;
+  width: 100%;
+   height: 100vh;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   left: 0px;
+   z-index: -1;
+   aspect-ratio: 4/3;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  color:white;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.effect {
+  
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+  color: black;
+ box-shadow: 0px 0px 100px red;
+  cursor: pointer;
+ 
+  font-weight: 600;
+  border-radius: 10px 0px 10px 0px;
+}
+.txt {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: white;
+}
+.active {
+  color: yellow
+}
+
