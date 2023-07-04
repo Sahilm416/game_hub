@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './Home.css'
-import Clip from './clips/back-clip.mp4'
+
 
 import { useReducer ,useEffect} from 'react'
 
@@ -47,9 +47,7 @@ export default function(){
 
     return(
         <>
-     <video className='clip' muted autoPlay loop>
-        <source src={Clip} />
-     </video>
+
      <div className='container' >
           <h1>World Class <span style={
             {
